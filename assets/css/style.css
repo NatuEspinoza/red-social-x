@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* clases del Navegador Global */
 
 .navbar {
@@ -39,3 +40,10 @@
   float: left;
 }
 <!-- Navegador global -->
+=======
+
+.card-img-top {
+	height: 200px;
+
+}
+>>>>>>> Stashed changes
