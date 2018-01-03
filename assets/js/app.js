@@ -44,16 +44,8 @@ $(document).ready(function() {
       }
     })
   });
-
+/**
+ * Función para los post
+ */
+  $("[data-toggle=tooltip]").tooltip();
 });
-=======
-
-
-// funcion para agregar comentarios
-
-$(document).ready(function(){
-
-    
-    $("[data-toggle=tooltip]").tooltip();
-});
->>>>>>> Stashed changes
