@@ -1,8 +1,22 @@
-<<<<<<< Updated upstream
-/* clases del Navegador Global */
+/* Clases generales */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #FFF;
+}
 
-.navbar {
-  margin-top: 15px;
+h4:hover {
+  color: #000;
+}
+
+.page-header {
+  font-family: 'Fjalla One', sans-serif;
+}
+/* clases del Navegador Global */
+.navbar-collapse .title {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2em;
 }
 
 .navbar-form {
@@ -14,7 +28,8 @@
 }
 
 .dropdown-menu {
-  width: 420px;
+  width: 200px;
+  background: #222222;
 }
 
 .dropdown-menu.setting {
@@ -31,19 +46,285 @@
   margin-top: 10px;
 }
 
-.media .media-left {
-  float: left;
-  margin-right: 10px;
-}
-
-.media .media-body {
-  float: left;
-}
-<!-- Navegador global -->
-=======
-
 .card-img-top {
 	height: 200px;
 
 }
->>>>>>> Stashed changes
+
+/* FIN clases del Navegador Global */
+
+/* Clases de sección de contactos */
+.contactos {
+  margin-top: 5em;
+}
+.panel > .list-group .list-group-item:first-child {
+    /*border-top: 1px solid rgb(204, 204, 204);*/
+}
+#back-to-bootsnipp {
+    position: fixed;
+    top: 10px; right: 10px;
+}
+
+
+.c-search > .form-control {
+   border-radius: 0px;
+   border-width: 0px;
+   border-bottom-width: 1px;
+   font-size: 1.3em;
+   padding: 12px 12px;
+   height: 44px;
+   outline: none !important;
+}
+.c-search > .form-control:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none;
+}
+.c-search > .input-group-btn .btn {
+   border-radius: 0px;
+   border-width: 0px;
+   border-left-width: 1px;
+   border-bottom-width: 1px;
+   height: 44px;
+}
+
+
+.c-list {
+    padding: 0px;
+    min-height: 44px;
+}
+.title {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+ul.c-controls {
+    list-style: none;
+    margin: 0px;
+    min-height: 44px;
+}
+
+ul.c-controls li {
+    margin-top: 8px;
+    float: left;
+}
+
+ul.c-controls li a {
+    font-size: 1.7em;
+    padding: 11px 10px 6px;
+}
+ul.c-controls li a i {
+    min-width: 24px;
+    text-align: center;
+}
+
+ul.c-controls li a:hover {
+    background-color: rgba(51, 51, 51, 0.2);
+}
+
+.c-toggle {
+    font-size: 1.7em;
+}
+
+.name {
+    font-size: 1em;
+    font-weight: 700;
+    color: #000;
+}
+
+.c-info {
+    padding: 5px 10px;
+    font-size: 1.25em;
+}
+/* FIN clases de sección de contactos */
+
+/* Clases de la sección de nuevos estrenos */
+
+.estrenos {
+  margin-top: -2em;
+}
+.movie-card {
+  background: #000;
+  box-shadow: 0px 6px 18px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 200px;
+  margin: 1em;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.movie-header {
+  padding: 0;
+  margin: 0;
+  height: 200px;
+  width: 100%;
+  display: block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* clases para agregar la imagen de cada película */
+.coco {
+  background: url(../img/coco.jpg);
+  background-size: cover;
+}
+
+.starWars {
+  background: url(../img/star-wars-ultimos-jedi-poster-pelicula-leia-como-personaje-central.jpg);
+  background-size: cover;
+}
+
+.jumanji {
+  background: url(../img/Ver-Jumanji-Bienvenidos-a-la-Jungla-2017-online.jpg);
+  background-size: cover;
+}
+
+.wonder {
+  background: url(../img/wonder.jpg);
+  background-size: cover;
+}
+
+.header-icon-container {
+  position: relative;
+}
+
+.header-icon {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 54px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+  opacity: .85;
+}
+
+.header-icon:hover {
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 74px;
+  text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  opacity: 1;
+}
+
+
+.movie-content {
+  padding: 18px 18px 24px 18px;
+  margin: 0;
+}
+
+.movie-content-header, .movie-info {
+  display: table;
+  width: 100%;
+}
+
+.movie-title {
+  font-size: 24px;
+  margin: 0;
+  display: table-cell;
+}
+
+.movie-info {
+  margin-top: 1em;
+}
+
+.info-section {
+  display: table-cell;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-section:first-of-type {
+  text-align: left;
+}
+
+.info-section:last-of-type {
+  text-align: right;
+}
+
+.info-section label {
+  display: block;
+  color: #671503;
+  margin-bottom: .5em;
+  font-size: 9px;
+}
+
+.info-section span {
+  font-weight: 700;
+  font-size: 11px;
+}
+.intro {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #831000;
+  text-decoration: none;
+}
+
+.header-icon {
+    width: 100%;
+    height: 200px;
+    line-height: 367px;
+    text-align: center;
+    margin-top: 10em;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 54px;
+    text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA;
+    opacity: .85;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga' 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* FIN Clases de la sección de nuevos estrenos */
+
+
+
+/* Media querys */
+@media screen and (max-width: 500px) {
+  .movie-card {
+    width: 95%;
+    max-width: 95%;
+    margin: 1em;
+    display: block;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+    .visible-xs {
+        display: inline-block !important;
+    }
+    .block {
+        display: block !important;
+        width: 100%;
+        height: 1px !important;
+    }
+}
