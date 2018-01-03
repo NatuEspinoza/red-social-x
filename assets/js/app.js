@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 $(document).ready(function() {
   /**
    * Función para modal de busqueda,filtro y agregar contactos
@@ -45,3 +46,14 @@ $(document).ready(function() {
   });
 
 });
+=======
+
+
+// funcion para agregar comentarios
+
+$(document).ready(function(){
+
+    
+    $("[data-toggle=tooltip]").tooltip();
+});
+>>>>>>> Stashed changes
