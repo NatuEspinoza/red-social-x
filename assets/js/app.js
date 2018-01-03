@@ -57,3 +57,29 @@ $(document).ready(function() {
      $(this).blur();
      $('#video-modal').show();
 });
+<<<<<<< Updated upstream
+=======
+
+
+
+// funcion para agregar comentarios
+
+$(document).ready(function(){
+
+    
+    $("[data-toggle=tooltip]").tooltip();
+});
+
+
+/*para pasar por el corazon y hacer clic */
+
+var n = 0;
+$( "div.enterleave" )
+  .on( "mouseenter", function() {
+    $( "p:first", this ).text( "mouse enter" );
+  })
+  .on( "mouseleave", function() {
+    $( "p:first", this ).text( "mouse leave" );
+    $( "p:last", this ).text( ++n );
+  });
+>>>>>>> Stashed changes
