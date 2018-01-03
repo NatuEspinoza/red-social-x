@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 $(document).ready(function() {
   /**
    * Función para modal de busqueda,filtro y agregar contactos
@@ -48,4 +48,12 @@ $(document).ready(function() {
  * Función para los post
  */
   $("[data-toggle=tooltip]").tooltip();
+
+  /**
+   * Función para modal de los trailer
+   */
+   $('#watch-video').on('click', function(e) {
+     e.preventDefault();
+     $(this).blur();
+     $('#video-modal').show();
 });
