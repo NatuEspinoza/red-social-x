@@ -25,6 +25,16 @@ h4:hover {
 .page-header {
   font-family: 'Fjalla One', sans-serif;
 }
+
+.btn-primary{
+  background-color: #590a02;
+  border-color: #590a02;
+}
+
+.btn-primary:hover{
+  background-color: #290400;
+  border-color: #290400;
+}
 /* clases del Navegador Global */
 .navbar-collapse .title {
   font-family: 'Fjalla One', sans-serif;
