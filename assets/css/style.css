@@ -380,6 +380,23 @@ a:hover {
   font-feature-settings: 'liga' 1;
   -webkit-font-smoothing: antialiased;
 }
+.fa-star {
+  font-size: 12px;
+  color: yellow;
+}
+
+.btn-secondary {
+  color: blue;
+}
+
+ .btn-secondary{
+ 	color: blue;
+ }
+
+
+ .btn-secondary a:hover{
+ 	background-color: blue;
+ }
 
 /* FIN Clases de la sección de nuevos estrenos */
 
@@ -525,27 +542,14 @@ a:hover {
   }
 }
 
+
+/* Fin Media querys */
+
 h4, .meta, .card-text {
   font-size: 12px;
 }
 
-.fa-star {
-  font-size: 12px;
-  color: yellow;
-}
 
-.btn-secondary {
-  color: blue;
-}
-
- .btn-secondary{
- 	color: blue;
- }
-
-
- .btn-secondary a:hover{
- 	background-color: blue;
- }
 
 
 /*noticias */
@@ -655,7 +659,7 @@ p {
 
 /*fin de noticias*/
 
- /* Agregando noticias por el usuario*/ 
+ /* Agregando noticias por el usuario*/
 
 
 
@@ -677,10 +681,10 @@ p {
   background-color: blue;
 }
 
-/* Fin Media querys */
+
 
 /*click en el corazon */
-  
+
 
   /* js comentarios */
   .contComentario{

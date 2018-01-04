@@ -74,11 +74,10 @@ $(document).ready(function() {
 
 
 /*para pasar por el corazon y hacer clic */
-     
+
 
 
 
 
 /*funcion para scroll de contactos */
-
-  
+});
