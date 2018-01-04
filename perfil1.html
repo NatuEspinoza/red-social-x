@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Red Film</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:100,300,400,500,700,900" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!-- Navegador global -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="busca tus series o películas favoritas...">
+                <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+              </div>
+            </form>
+            <span class="title">RedFilm <span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+                <div class="dropdown-menu" role="menu">
+                  <div class="media">
+                    <div class="media-body">
+                      <a class="media-left" href="index.html">
+                        <h4 class="media-heading">Volver a mi perfil</h4>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </div>
+  </div>
+  <!-- Fin Navegador global -->
+
+  <!-- Sección de Amigos en común -->
+  <div class="container-fluid contactos">
+    <div class="col-sm-3 col-xs-12">
+      <div class="row">
+        <div>
+          <button id="scrollelemento"><span></span></button>
+          <div class="panel panel-default">
+            <div class="panel-heading c-list">
+              <span class="title">Amigos en común</span>
+            </div>
+
+            <div class="row" style="display: none;">
+              <div class="col-xs-12">
+                <div class="input-group c-search">
+                  <input type="text" class="form-control" id="contact-list-search">
+                  <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search text-muted"></span></button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-group hidden-xs" id="contact-list">
+              <li class="list-group-item">
+                <div class="col-xs-12 col-sm-3">
+                  <img src="http://api.randomuser.me/portraits/men/97.jpg" alt="Seth Frazier" class="img-responsive img-circle" />
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                  <span class="name">Seth Frazier</span><br/>
+                  <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
+                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
+                </div>
+                <div class="clearfix"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-xs-12 col-sm-3">
+                  <img src="http://api.randomuser.me/portraits/men/24.jpg" alt="Todd Shelton" class="img-responsive img-circle" />
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                  <span class="name">Todd Shelton</span><br/>
+                  <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
+                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
+                </div>
+                <div class="clearfix"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-xs-12 col-sm-3">
+                  <img src="http://api.randomuser.me/portraits/women/34.jpg" alt="Rosemary Porter" class="img-responsive img-circle" />
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                  <span class="name">Rosemary Porter</span><br/>
+                  <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
+                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
+                </div>
+                <div class="clearfix"></div>
+              </li>
+              <li class="list-group-item">
+                <div class="col-xs-12 col-sm-3">
+                  <img src="http://api.randomuser.me/portraits/women/76.jpg" alt="Glenda Patterson" class="img-responsive img-circle" />
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                  <span class="name">Glenda Patterson</span><br/>
+                  <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
+                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149 </span><br/></span>
+                  <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
+                </div>
+                <div class="clearfix"></div>
+              </li>
+            </ul>
+            <div id="hastaaqui">Animar scroll hasta aquí</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Sección intereses en común -->
+
+    <div class="estrenos">
+      <div class="col-sm-9">
+        <h1 class="page-header" style="margin-top:0;">Scott Stevens</h1>
+        <h2>Intereses en común</h2>
+        <!-- estreno 1 -->
+        <div class="movie-card col-sm-2 col-xs-12">
+          <div class="movie-header coco">
+            <div class="header-icon-container">
+              <a href="#" data-toggle="modal" data-target="#myModal">
+      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+      				</a>
+            </div>
+          </div>
+          <!--Contenido de la película-->
+          <div class="movie-content">
+            <div class="movie-content-header">
+              <a href="#">
+                <h3 class="movie-title">Coco</h3>
+              </a>
+            </div>
+            <div class="movie-info">
+              <div class="info-section">
+                <label>Categorías</label>
+                <span>Infantil, animación</span>
+              </div>
+              <div class="info-section">
+                <label>Calificación</label>
+                <span>0.8</span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <br>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- estreno 2 -->
+        <div class="movie-card col-sm-2 col-xs-12">
+          <div class="movie-header starWars">
+            <div class="header-icon-container">
+              <a href="#" data-toggle="modal" data-target="#myModal-2">
+      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+      				</a>
+            </div>
+          </div>
+          <!--Contenido de la película-->
+          <div class="movie-content">
+            <div class="movie-content-header">
+              <a href="#">
+                <h3 class="movie-title">Star Wars</h3>
+              </a>
+            </div>
+            <div class="movie-info">
+              <div class="info-section">
+                <label>Categorías</label>
+                <span>Infantil, animación</span>
+              </div>
+              <div class="info-section">
+                <label>Calificación</label>
+                <span>0.3</span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <br>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- estreno 3 -->
+        <div class="movie-card col-sm-2 col-xs-12">
+          <div class="movie-header jumanji">
+            <div class="header-icon-container">
+              <a href="#" data-toggle="modal" data-target="#myModal-3">
+      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+      				</a>
+            </div>
+          </div>
+          <!--Contenido de la película-->
+          <div class="movie-content">
+            <div class="movie-content-header">
+              <a href="#">
+                <h3 class="movie-title">Jumanji</h3>
+              </a>
+            </div>
+            <div class="movie-info">
+              <div class="info-section">
+                <label>Categorías</label>
+                <span>Infantil, animación</span>
+              </div>
+              <div class="info-section">
+                <label>Calificación</label>
+                <span>0.3</span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <br>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- estreno 4 -->
+        <div class="movie-card col-sm-2 col-xs-12">
+          <div class="movie-header wonder">
+            <div class="header-icon-container">
+              <a href="#" data-toggle="modal" data-target="#myModal-4">
+      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+      				</a>
+            </div>
+          </div>
+          <!--Contenido de la película-->
+          <div class="movie-content">
+            <div class="movie-content-header">
+              <a href="#">
+                <h3 class="movie-title">Wonder</h3>
+              </a>
+            </div>
+            <div class="movie-info">
+              <div class="info-section">
+                <label>Categorías</label>
+                <span>Infantil, animación</span>
+              </div>
+              <div class="info-section">
+                <label>Calificación</label>
+                <span>0.4</span>
+                <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <br>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:red;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Sección del muro de Stevens -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        <div class="comments">
+          <h1>Muro de Stevens</h1>
+          <div class="comment-wrap">
+            <div class="photo">
+              <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg')"></div>
+            </div>
+            <div class="comment-block">
+              <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit
+                quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
+              <div class="bottom-comment">
+                <div class="comment-date">Aug 24, 2014 @ 2:35 PM</div>
+                <ul class="comment-actions">
+                  <li class="complain">Complain</li>
+                  <li class="reply">Reply</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-wrap">
+            <div class="photo">
+              <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
+            </div>
+            <div class="comment-block">
+              <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.</p>
+              <div class="bottom-comment">
+                <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+                <ul class="comment-actions">
+                  <li class="complain">Complain</li>
+                  <li class="reply">Reply</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="comment-wrap">
+            <div class="photo">
+              <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
+            </div>
+            <div class="comment-block">
+              <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.</p>
+              <div class="bottom-comment">
+                <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+                <ul class="comment-actions">
+                  <li class="complain">Complain</li>
+                  <li class="reply">Reply</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="comment-wrap">
+            <div class="photo">
+              <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
+            </div>
+            <div class="comment-block">
+              <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corsporis totam.</p>
+              <div class="bottom-comment">
+                <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+                <ul class="comment-actions">
+                  <li class="complain">Complain</li>s
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment-wrap">
+            <div class="photo">
+              <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg')"></div>
+            </div>
+            <!--agregando noticias por el usuario -->
+            <div class="comment-block">
+              <form action="">
+                <textarea name="" id="comment" cols="30" rows="3" placeholder="Agrega noticias de tus peliculas"></textarea>
+                <ul>
+                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
+                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
+                </ul>
+                <button id="share" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FIN Row de favoritos y muro de contenido -->
+
+    <!-- Posts -->
+    <div class="row">
+      <div class="col-sm-9">
+        <div id="nuevoComentario"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid footer">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-center center-block" style="margin-top:10px;">
+          <h5>Síguenos en</h5>
+          <a href="https://www.facebook.com/RedFilmsTV"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/RedFilmCo"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c555f55746.js"></script>
+  <script src="assets/js/app.js" type="application/javascript"></script>
+
+</body>
+
+</html>

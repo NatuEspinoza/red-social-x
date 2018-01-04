@@ -219,22 +219,21 @@
   </div>
   <!-- Fin Navegador global -->
 
-  <!-- Sección de contactos -->
+  <!-- Sección de amigos -->
   <div class="container-fluid contactos">
     <div class="col-sm-3 col-xs-12">
       <div class="row">
         <div>
-         <button id="scrollelemento"><span></span></button>
+          <button id="scrollelemento"><span></span></button>
           <div class="panel panel-default">
             <div class="panel-heading c-list">
               <span class="title">Amigos</span>
               <ul class="pull-right c-controls">
                 <li><a href="#cant-do-all-the-work-for-you" data-toggle="tooltip" data-placement="top" title="Add Contact"><i class="glyphicon glyphicon-plus"></i></a></li>
-                <li><a href="#" class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><i class="fa fa-ellipsis-v"></i></a></li>
               </ul>
             </div>
 
-            <div class="row" style="display: none;">
+            <div class="row">
               <div class="col-xs-12">
                 <div class="input-group c-search">
                   <input type="text" class="form-control" id="contact-list-search">
@@ -248,7 +247,7 @@
             <ul class="list-group hidden-xs" id="contact-list">
               <li class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle" />
+                  <a href="perfil1.html"><img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle" /></a>
                 </div>
                 <div class="col-xs-12 col-sm-9">
                   <span class="name">Scott Stevens</span><br/>
@@ -379,12 +378,13 @@
     <!-- Sección Nuevos estrenos -->
     <div class="estrenos">
       <div class="col-sm-9">
-        <h1 class="page-header" style="margin-top:0;">Nuevos Estrenos</h1>
+        <h1 class="page-header" style="margin-top:0;">Kesly Martínez</h1>
+        <h2>Nuevos Estrenos</h2>
         <!-- estreno 1 -->
         <div class="movie-card col-sm-2 col-xs-12">
           <div class="movie-header coco">
             <div class="header-icon-container">
-              <a href="#" >
+              <a href="#" data-toggle="modal" data-target="#myModal">
       					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
       				</a>
             </div>
@@ -416,7 +416,7 @@
         <div class="movie-card col-sm-2 col-xs-12">
           <div class="movie-header starWars">
             <div class="header-icon-container">
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#myModal-2">
       					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
       				</a>
             </div>
@@ -437,6 +437,8 @@
                 <label>Calificación</label>
                 <span>0.3</span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <br>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
               </div>
             </div>
           </div>
@@ -447,7 +449,7 @@
         <div class="movie-card col-sm-2 col-xs-12">
           <div class="movie-header jumanji">
             <div class="header-icon-container">
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#myModal-3">
       					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
       				</a>
             </div>
@@ -468,6 +470,8 @@
                 <label>Calificación</label>
                 <span>0.3</span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <br>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
               </div>
             </div>
           </div>
@@ -476,7 +480,7 @@
         <div class="movie-card col-sm-2 col-xs-12">
           <div class="movie-header wonder">
             <div class="header-icon-container">
-              <a href="#">
+              <a href="#" data-toggle="modal" data-target="#myModal-4">
       					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
       				</a>
             </div>
@@ -497,6 +501,8 @@
                 <label>Calificación</label>
                 <span>0.4</span>
                 <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <br>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
               </div>
             </div>
           </div>
@@ -506,140 +512,158 @@
     </div>
   </div>
   </div>
-<!-- Peliculas Favoritas -->
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-3 col-xs-12">
-        <h2>Tus Favoritas</h2>
-          <div class="card card-inverse card-info">
-          <img class="card-img-top" src="assets/img/loVengadores.jpg">
-          <div class="card-block">
-              <h4 class="card-title">Accion</h4>
-              <div class="card-text">
-                  Año 2012
-              </div>
-          </div>
-          <div class="card-footer">
-              <button class="btn btn-info float-right btn-sm">Seguir</button>
-          </div>
-      </div>
-       <div class="card card-inverse card-info">
-          <img class="card-img-top" src="assets/img/loVengadores.jpg">
-          <div class="card-block">
-              <h4 class="card-title">Accion</h4>
-              <div class="card-text">
-                  Año 2012
-              </div>
-          </div>
-          <div class="card-footer">
-              <button class="btn btn-info float-right btn-sm">Seguir</button>
-          </div>
-      </div>
-      </div>
+  <!-- Row de favoritas y muro de contenido -->
+  <!-- Peliculas Favoritas -->
 
-  <!-- menu de contenido o noticias -->
-  <div class="col-sm-9">
-  <div class="comments"><h1>Noticias</h1>
-    <div class="comment-wrap">
-        <div class="photo">
+  <div class="container">
+
+    <div class="col-sm-3 col-xs-12" style="margin-bottom:2em;">
+      <h2>Tus Favoritas</h2>
+      <div class="card card-inverse card-info">
+        <img class="card-img-top" src="assets/img/loVengadores.jpg">
+        <div class="card-block">
+          <h4 class="card-title">Accion</h4>
+          <div class="card-text">
+            Año 2012
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-info float-right btn-sm">Ver más</button>
+        </div>
+      </div>
+      <div class="card card-inverse card-info" style="margin-top: 2em;">
+        <img class="card-img-top" src="assets/img/loVengadores.jpg">
+        <div class="card-block">
+          <h4 class="card-title">Accion</h4>
+          <div class="card-text">
+            Año 2012
+          </div>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-info float-right btn-sm">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Sección de mi muro de noticias y posts -->
+    <div class="col-sm-9">
+      <div class="comments">
+        <h1>Mi muro</h1>
+        <div class="comment-wrap">
+          <div class="photo">
             <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg')"></div>
-        </div>
-        <div class="comment-block">
-            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit quasi
-                sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
+          </div>
+          <div class="comment-block">
+            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit
+              quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
             <div class="bottom-comment">
-                <div class="comment-date">Aug 24, 2014 @ 2:35 PM</div>
-                <ul class="comment-actions">
-                    <li class="complain">Complain</li>
-                    <li class="reply">Reply</li>
-                </ul>
+              <div class="comment-date">Aug 24, 2014 @ 2:35 PM</div>
+              <ul class="comment-actions">
+                <li class="complain">Complain</li>
+                <li class="reply">Reply</li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="comment-wrap">
-        <div class="photo">
+        <div class="comment-wrap">
+          <div class="photo">
             <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
-        </div>
-        <div class="comment-block">
+          </div>
+          <div class="comment-block">
             <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.</p>
             <div class="bottom-comment">
-                <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
-                <ul class="comment-actions">
-                    <li class="complain">Complain</li>
-                    <li class="reply">Reply</li>
-                </ul>
+              <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+              <ul class="comment-actions">
+                <li class="complain">Complain</li>
+                <li class="reply">Reply</li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-     <div class="comment-wrap">
-        <div class="photo">
+        <div class="comment-wrap">
+          <div class="photo">
             <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
-        </div>
-        <div class="comment-block">
+          </div>
+          <div class="comment-block">
             <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.</p>
             <div class="bottom-comment">
-                <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
-                <ul class="comment-actions">
-                    <li class="complain">Complain</li>
-                    <li class="reply">Reply</li>
-                </ul>
+              <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+              <ul class="comment-actions">
+                <li class="complain">Complain</li>
+                <li class="reply">Reply</li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-      <div class="comment-wrap">
-        <div class="photo">
+        <div class="comment-wrap">
+          <div class="photo">
             <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
-        </div>
-        <div class="comment-block">
+          </div>
+          <div class="comment-block">
             <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corsporis totam.</p>
             <div class="bottom-comment">
-                <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
-                <ul class="comment-actions">
-                    <li class="complain">Complain</li>s
-                </ul>
+              <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+              <ul class="comment-actions">
+                <li class="complain">Complain</li>s
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
 
-     <div class="comment-wrap">
-        <div class="photo">
+        <div class="comment-wrap">
+          <div class="photo">
             <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg')"></div>
-        </div>
-           <!--agregando noticias por el usuario -->
-        <div class="comment-block">
+          </div>
+          <!--agregando noticias por el usuario -->
+          <div class="comment-block">
             <form action="">
-                <textarea name="" id="comment" cols="30" rows="3" placeholder="Agrega noticias de tus peliculas"></textarea>
-                <ul>
-                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
-                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
-                </ul>
-                <button id="share" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+              <textarea name="" id="comment" cols="30" rows="3" placeholder="Agrega noticias de tus peliculas"></textarea>
+              <ul>
+                <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
+                <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
+              </ul>
+              <button id="share" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
             </form>
+          </div>
         </div>
+      </div>
     </div>
-</div>
- </div>
+    <!-- FIN Row de favoritos y muro de contenido -->
+
+    <!-- Posts -->
+    <div class="row">
+      <div class="col-sm-9">
+        <div id="nuevoComentario"></div>
+      </div>
+    </div>
   </div>
 
-  <div class="row">
-              <div class="col-sm-9">
-                 <div id="nuevoComentario"></div>
-         </div>
-            </div>
+  <!-- footer -->
+  <footer class="container-fluid footer">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-center center-block" style="margin-top:10px;">
+          <h5>Síguenos en</h5>
+          <a href="https://www.facebook.com/RedFilmsTV"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/RedFilmCo"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
 
 
 
   <!-- Scripts -->
 
-  <script
- src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
- integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
- crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- <script src="https://use.fontawesome.com/c555f55746.js"></script>
- <script src="assets/js/app.js" type="application/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c555f55746.js"></script>
+  <script src="assets/js/app.js" type="application/javascript"></script>
 
 </body>
 

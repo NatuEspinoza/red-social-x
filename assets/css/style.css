@@ -1,4 +1,5 @@
 /* Clases generales */
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -10,12 +11,12 @@ body {
   color: #FFF;
 }
 
-h4:hover {
-  color: #000;
+h1, h2 {
+  font-family: 'Fjalla One', sans-serif;
 }
 
-.page-header {
-  font-family: 'Fjalla One', sans-serif;
+h4:hover {
+  color: #000;
 }
 
 .text-black {
@@ -63,6 +64,7 @@ h4:hover {
 /* FIN clases del Navegador Global */
 
 /* Clases del modal de login */
+
 .btn-primary {
   background-color: #590a02;
   border-color: #590a02;
@@ -72,9 +74,6 @@ h4:hover {
   background-color: #290400;
   border-color: #290400;
 }
-
-
-
 
 /* Clases de sección de contactos */
 
@@ -117,61 +116,63 @@ h4:hover {
 }
 
 /* tus favoritos */
+
 h2 {
-	text-align: left;
+  text-align: left;
 }
+
 ..card-inverse .btn {
-    border: 1px solid rgba(0, 0, 0, .05);
+  border: 1px solid rgba(0, 0, 0, .05);
 }
 
 .profile {
-    position: absolute;
-    top: -12px;
-    display: inline-block;
-    overflow: hidden;
-    box-sizing: border-box;
-    width: 25px;
-    height: 25px;
-    margin: 0;
-    border: 1px solid #fff;
-    border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .profile-avatar {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .profile-inline {
-    position: relative;
-    top: 0;
-    display: inline-block;
+  position: relative;
+  top: 0;
+  display: inline-block;
 }
 
-.profile-inline ~ .card-title {
-    display: inline-block;
-    margin-left: 4px;
-    vertical-align: top;
+.profile-inline~.card-title {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: top;
 }
 
 .text-bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .meta {
-    font-size: 1em;
-    color: rgba(0, 0, 0, .4);
+  font-size: 1em;
+  color: rgba(0, 0, 0, .4);
 }
 
 .meta a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, .4);
+  text-decoration: none;
+  color: rgba(0, 0, 0, .4);
 }
 
 .meta a:hover {
-    color: rgba(0, 0, 0, .87);
+  color: rgba(0, 0, 0, .87);
 }
 
 /*fin de favoritos*/
@@ -219,7 +220,8 @@ ul.c-controls li a:hover {
 /* FIN clases de sección de contactos */
 
 /* Clases de la sección de nuevos estrenos */
-.glyphicon-star:hover{
+
+.glyphicon-star:hover {
   color: #d4ff00;
   cursor: pointer;
 }
@@ -380,6 +382,7 @@ a:hover {
   font-feature-settings: 'liga' 1;
   -webkit-font-smoothing: antialiased;
 }
+
 .fa-star {
   font-size: 12px;
   color: yellow;
@@ -389,16 +392,25 @@ a:hover {
   color: blue;
 }
 
- .btn-secondary{
- 	color: blue;
- }
+.btn-secondary {
+  color: blue;
+}
 
-
- .btn-secondary a:hover{
- 	background-color: blue;
- }
+.btn-secondary a:hover {
+  background-color: blue;
+}
 
 /* FIN Clases de la sección de nuevos estrenos */
+
+/* Favoritas */
+.btn-info{
+  background-color: #7c0f00;
+  border-color: #7c0f00;
+}
+.btn-info:hover{
+  background-color: #400800;
+  border-color: #400800;
+}
 
 /* Agregando noticias por el usuario*/
 
@@ -516,44 +528,9 @@ a:hover {
   margin-right: 7px;
 }
 
-/* Media querys */
-
-@media screen and (max-width: 500px) {
-  .movie-card {
-    width: 95%;
-    max-width: 95%;
-    margin: 1em;
-    display: block;
-  }
-  .container {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-@media (max-width: 767px) {
-  .visible-xs {
-    display: inline-block !important;
-  }
-  .block {
-    display: block !important;
-    width: 100%;
-    height: 1px !important;
-  }
-}
-
-
-/* Fin Media querys */
-
 h4, .meta, .card-text {
   font-size: 12px;
 }
-
-
-
-
-/*noticias */
-
 
 
 input, textarea {
@@ -567,15 +544,19 @@ input, textarea {
   font-size: 1rem;
   color: #555f77;
 }
+
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #ced2db;
 }
+
 input::-moz-placeholder, textarea::-moz-placeholder {
   color: #ced2db;
 }
+
 input:-moz-placeholder, textarea:-moz-placeholder {
   color: #ced2db;
 }
+
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #ced2db;
 }
@@ -602,6 +583,7 @@ p {
   display: table-cell;
   width: 3.5rem;
 }
+
 .photo .avatar {
   height: 2.25rem;
   width: 2.25rem;
@@ -617,6 +599,7 @@ p {
   border-radius: 0.1875rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
 }
+
 .comment-block textarea {
   width: 100%;
   resize: none;
@@ -638,42 +621,40 @@ p {
 .comment-actions {
   float: right;
 }
+
 .comment-actions li {
   display: inline;
   margin: -2px;
   cursor: pointer;
 }
+
 .comment-actions li.complain {
   padding-right: 0.75rem;
   border-right: 1px solid #e1e5eb;
 }
+
 .comment-actions li.reply {
   padding-left: 0.75rem;
   padding-right: 0.125rem;
 }
+
 .comment-actions li:hover {
   color: #0095ff;
 }
 
 
-/*fin de noticias*/
-
- /* Agregando noticias por el usuario*/
-
-
-
 .widget-area {
-    background-color: #fff;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
-    -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
-    -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
-    float: right;
-    margin-top: 30px;
-    padding: 37px 27px;
-    width: 100%;
+  background-color: #fff;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+  float: right;
+  margin-top: 30px;
+  padding: 37px 27px;
+  width: 100%;
 }
 
 .btn-secondary a:hover {
@@ -681,16 +662,93 @@ p {
 }
 
 
+/*fin de noticias*/
 
 /*click en el corazon */
 
+/* js comentarios */
 
-  /* js comentarios */
-  .contComentario{
+.contComentario {
   margin: 2.5rem auto 0;
   max-width: 60.75rem;
   padding: 0 1.25rem;
 }
+
 #nuevoComentario {
-	margin-left: 0em;
+  margin-left: 0em;
 }
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background: #222222;
+  margin-top: 30px;
+}
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+  color: #3B5998;
+}
+
+#social-tw:hover {
+  color: #4099FF;
+}
+
+#social-gp:hover {
+  color: #d34836;
+}
+
+#social-em:hover {
+  color: #f39c12;
+}
+
+/* Media querys */
+
+@media screen and (max-width: 500px) {
+  .movie-card {
+    width: 95%;
+    max-width: 95%;
+    margin: 1em;
+    display: block;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+  .visible-xs {
+    display: inline-block !important;
+  }
+  .block {
+    display: block !important;
+    width: 100%;
+    height: 1px !important;
+  }
+  /* Favoritas */
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Fin Media querys */

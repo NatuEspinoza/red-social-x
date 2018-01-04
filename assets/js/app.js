@@ -79,7 +79,7 @@ $(document).ready(function() {
 
 
 
-/*funcion para scroll de contactos */
+  /*funcion para scroll de contactos */
 
 
 
