@@ -47,39 +47,38 @@ $(document).ready(function() {
 /**
  * Función para los post
  */
-  $("[data-toggle=tooltip]").tooltip();
+
 
   /**
    * Función para modal de los trailer
    */
    $('#watch-video').on('click', function(e) {
      e.preventDefault();
-     $(this).blur();
      $('#video-modal').show();
 });
-<<<<<<< Updated upstream
-=======
+
 
 
 
 // funcion para agregar comentarios
 
-$(document).ready(function(){
 
-    
-    $("[data-toggle=tooltip]").tooltip();
-});
+
+
+    $('#share').click(function(){
+    var comentario= $('#comment').val();
+    $('#comment').val("");
+    $("#nuevoComentario").append("<div class='contComentario'>" + comentario + "</div>");
+
+  });
 
 
 /*para pasar por el corazon y hacer clic */
+     
 
-var n = 0;
-$( "div.enterleave" )
-  .on( "mouseenter", function() {
-    $( "p:first", this ).text( "mouse enter" );
-  })
-  .on( "mouseleave", function() {
-    $( "p:first", this ).text( "mouse leave" );
-    $( "p:last", this ).text( ++n );
-  });
->>>>>>> Stashed changes
+
+
+
+/*funcion para scroll de contactos */
+
+  
