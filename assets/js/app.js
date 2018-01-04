@@ -1,11 +1,9 @@
-
 $(document).ready(function() {
   /**
    * Función para modal de busqueda,filtro y agregar contactos
    */
-   /*
+
   $(function() {
-    /* BOOTSNIPP FULLSCREEN FIX 
     if (window.location == window.parent.location) {
       $('#back-to-bootsnipp').removeClass('hide');
     }
@@ -44,44 +42,45 @@ $(document).ready(function() {
         elem.slideUp(100);
       }
     })
-  });  
- 
+  });
 
-/**
- * Función para los post
- */
+
 
 
   /**
    * Función para modal de los trailer
    */
-   
-   $('#watch-video').on('click', function(e) {
-     e.preventDefault();
-     $('#video-modal').show();
-});
+  $('#watch-video').on('click', function(e) {
+    e.preventDefault();
+    $('#video-modal').show();
+  });
 
 
 
 
 
-// funcion para agregar comentarios
+  /**
+   * Función para los post
+   */
 
-    $('#share').click(function(){
-    	console.log("hola");
-    var comentario= $('#comment').val();
+  $('#share').click(function() {
+    console.log("hola");
+    var comentario = $('#comment').val();
     $('#comment').val("");
     $("#nuevoComentario").append("<div class='contComentario'>" + comentario + "</div>");
 
   });
 
 
-/*para pasar por el corazon y hacer clic */
+  /**
+   * Función para seguir (corazón)
+   */
 
 
-});
 
 
 /*funcion para scroll de contactos */
 
 
+
+});
