@@ -44,6 +44,7 @@ $(document).ready(function() {
       }
     })
   });
+
 /**
  * Función para los post
  */
@@ -52,6 +53,7 @@ $(document).ready(function() {
   /**
    * Función para modal de los trailer
    */
+   
    $('#watch-video').on('click', function(e) {
      e.preventDefault();
      $('#video-modal').show();
@@ -60,12 +62,11 @@ $(document).ready(function() {
 
 
 
+
 // funcion para agregar comentarios
 
-
-
-
     $('#share').click(function(){
+    	console.log("hola");
     var comentario= $('#comment').val();
     $('#comment').val("");
     $("#nuevoComentario").append("<div class='contComentario'>" + comentario + "</div>");
@@ -79,5 +80,9 @@ $(document).ready(function() {
 
 
 
+<<<<<<< Updated upstream
 /*funcion para scroll de contactos */
 });
+=======
+})
+>>>>>>> Stashed changes
