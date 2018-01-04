@@ -3,8 +3,9 @@ $(document).ready(function() {
   /**
    * Función para modal de busqueda,filtro y agregar contactos
    */
+   /*
   $(function() {
-    /* BOOTSNIPP FULLSCREEN FIX */
+    /* BOOTSNIPP FULLSCREEN FIX 
     if (window.location == window.parent.location) {
       $('#back-to-bootsnipp').removeClass('hide');
     }
@@ -43,7 +44,8 @@ $(document).ready(function() {
         elem.slideUp(100);
       }
     })
-  });
+  });  
+ 
 
 /**
  * Función para los post
@@ -77,12 +79,9 @@ $(document).ready(function() {
 /*para pasar por el corazon y hacer clic */
 
 
-
-
-
-<<<<<<< Updated upstream
-/*funcion para scroll de contactos */
 });
-=======
-})
->>>>>>> Stashed changes
+
+
+/*funcion para scroll de contactos */
+
+
