@@ -124,11 +124,6 @@ h2 {
     border: 1px solid rgba(0, 0, 0, .05);
 }
 
-<<<<<<< Updated upstream
-.card-img-top {
-    height: 184px;
-    width: 164px;
-=======
 .profile {
     position: absolute;
     top: -12px;
@@ -140,7 +135,6 @@ h2 {
     margin: 0;
     border: 1px solid #fff;
     border-radius: 50%;
->>>>>>> Stashed changes
 }
 
 .profile-avatar {
@@ -386,27 +380,7 @@ a:hover {
   font-feature-settings: 'liga' 1;
   -webkit-font-smoothing: antialiased;
 }
-h4, .meta, .card-text {
-  font-size: 12px;
-}
 
-.fa-star {
-  font-size: 12px;
-  color: yellow;
-}
-
-.btn-secondary {
-  color: blue;
-}
-
-.btn-secondary a:hover {
-  background-color: blue;
-}
-
-/* CLASES DE MODAL TRAILER */
-#modal-lg {
-  width: 350px !important;
-}
 /* FIN Clases de la sección de nuevos estrenos */
 
 /* Agregando noticias por el usuario*/
@@ -562,8 +536,6 @@ h4, .meta, .card-text {
 
 .btn-secondary {
   color: blue;
-<<<<<<< Updated upstream
-=======
 }
 
  .btn-secondary{
@@ -699,7 +671,6 @@ p {
     margin-top: 30px;
     padding: 37px 27px;
     width: 100%;
->>>>>>> Stashed changes
 }
 
 .btn-secondary a:hover {
@@ -709,14 +680,7 @@ p {
 /* Fin Media querys */
 
 /*click en el corazon */
-  .heart,.dbl {
-    background: yellow;
-    color: red;
-  }
-
-  .heart {
-  	color: red;
-  }
+  
 
   /* js comentarios */
   .contComentario{
@@ -726,15 +690,4 @@ p {
 }
 #nuevoComentario {
 	margin-left: 0em;
-}
-
-
-#nuevaPub{
-	margin-left: 0em;
-	color: red;
-}
-
-#publicar{
-  border-radius: 5em;
-  height: 100vh;
 }
