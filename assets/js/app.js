@@ -80,14 +80,7 @@ $(document).ready(function() {
     allowClear: true
 
   });
-
-
-
-  /*funcion para scroll de contactos */
-
-
-
-
+    
 	$(".js-example-placeholder").select2({
     placeholder: "Select a state",
     allowClear: true

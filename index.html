@@ -11,226 +11,214 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 </head>
 
-<body><link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<body>
 
-  <!-- MODAL LOGIN -->
-  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header" align="center">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-					</button>
-        </div>
-
-
-        <!-- Begin # DIV Form -->
-        <div id="div-forms">
-
-          <!-- Begin # Login Form -->
-          <form id="login-form">
-            <div class="modal-body">
-              <span class="title text-black">RedFilm <span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
-              <div id="div-login-msg">
-                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
-              </div>
-              <input id="login_username" class="form-control" type="text" placeholder="Username" required>
-              <input id="login_password" class="form-control" type="password" placeholder="Password" required>
-              <div class="checkbox">
-                <label class="text-black">
-                                    <input type="checkbox"> Remember me
-                                </label>
+ <!-- MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" align="center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </div>
+      <!-- Begin # DIV Form -->
+      <div id="div-forms">
+        <!-- Begin # Login Form -->
+        <form id="login-form">
+          <div class="modal-body">
+            <span class="title text-black">RedFilm <span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
+            <div id="div-login-msg">
+              <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right">
               </div>
             </div>
-            <div class="modal-footer">
-              <div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
-              </div>
-              <div>
-                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
-              </div>
+            <input id="login_username" class="form-control" type="text" placeholder="Username" required>
+            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+            <div class="checkbox">
+              <label class="text-black">
+              <input type="checkbox"> Remember me </label>
             </div>
-          </form>
-          <!-- End # Login Form -->
-
-          <!-- Begin | Lost Password Form -->
-          <form id="lost-form" style="display:none;">
-            <div class="modal-body">
-              <div id="div-lost-msg">
-                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
-                <span id="text-lost-msg">Type your e-mail.</span>
-              </div>
-              <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
             </div>
-            <div class="modal-footer">
-              <div>
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-              </div>
-              <div>
-                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
-              </div>
+            <div>
+              <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+              <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
             </div>
-          </form>
-          <!-- End | Lost Password Form -->
-
-          <!-- Begin | Register Form -->
-          <form id="register-form" style="display:none;">
-            <div class="modal-body">
-              <div id="div-register-msg">
-                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
-                <span id="text-register-msg">Register an account.</span>
+          </div>
+        </form>
+        <!-- End # Login Form -->
+        <!-- Begin | Lost Password Form -->
+        <form id="lost-form" style="display:none;">
+          <div class="modal-body">
+            <div id="div-lost-msg">
+              <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right">
               </div>
-              <input id="register_username" class="form-control" type="text" placeholder="Username" required>
-              <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-              <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+              <span id="text-lost-msg">Type your e-mail.</span>
             </div>
-            <div class="modal-footer">
-              <div>
-                <button type="button" class="btn btn-block btn-facebook rounded-0 text-left">Login with Facebook</button>
-              </div>
-              <div>
-                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
-                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-              </div>
+            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
             </div>
-          </form>
-
-        </div>
+            <div>
+              <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+              <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+            </div>
+          </div>
+        </form>
+        <!-- End | Lost Password Form -->
+        <!-- Begin | Register Form -->
+        <form id="register-form" style="display:none;">
+          <div class="modal-body">
+            <div id="div-register-msg">
+              <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right">
+              </div>
+              <span id="text-register-msg">Register an account.</span>
+            </div>
+            <input id="register_username" class="form-control" type="text" placeholder="Username" required>
+            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button type="button" class="btn btn-block btn-facebook rounded-0 text-left">Login with Facebook</button>
+            </div>
+            <div>
+              <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+              <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  <!-- FIN MODAL LOGIN -->
-
-  <!-- MODAL VER TRAILER -->
-  <!-- TRAILER COCO-->
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-sm" id="modal-lg">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/awzWdtCezDo?rel=0&amp;controls=0&amp;showinfo=0?" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      </div>
+</div>
+<!-- FIN MODAL LOGIN -->
+<!-- MODAL VER TRAILER -->
+<!-- TRAILER COCO-->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" id="modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/awzWdtCezDo?rel=0&amp;controls=0&amp;showinfo=0?" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+      </iframe>
     </div>
   </div>
-  <!-- FIN TRAILER COCO -->
-  <!-- TRAILER STAR WARS -->
-  <div id="myModal-2" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-sm" id="modal-lg">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/Q0CbN8sfihY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      </div>
+</div>
+<!-- FIN TRAILER COCO -->
+<!-- TRAILER STAR WARS -->
+<div id="myModal-2" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" id="modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/Q0CbN8sfihY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+      </iframe>
     </div>
   </div>
-  <!-- FIN TRAILER STAR WARS -->
-  <!-- TRAILER JUMANJI -->
-  <div id="myModal-3" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-sm" id="modal-lg">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/leIrosWRbYQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      </div>
+</div>
+<!-- FIN TRAILER STAR WARS -->
+<!-- TRAILER JUMANJI -->
+<div id="myModal-3" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" id="modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/leIrosWRbYQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+      </iframe>
     </div>
   </div>
-  <!-- FIN TRAILER JUMANJI -->
-  <!-- TRAILER WONDER -->
-  <div id="myModal-4" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-sm" id="modal-lg">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal">×</button>
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/AWgLSlxOAt4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-      </div>
+</div>
+<!-- FIN TRAILER JUMANJI -->
+<!-- TRAILER WONDER -->
+<div id="myModal-4" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm" id="modal-lg">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/AWgLSlxOAt4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen>
+      </iframe>
     </div>
   </div>
-  <!-- FIN TRAILER WONDER -->
-  <!-- FIN MODAL VER TRAILER -->
-
-  <!-- MODAL de contactos -->
-  <div id="cant-do-all-the-work-for-you" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
- 
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-          <h4 class="modal-title" id="mySmallModalLabel"><input type="text"  class="form-control" id="contact-list-search" placeholder="busca amigos..."></h4>
-        </div>
-        <div class="modal-body">
-
-          <select class="js-example-placeholder-multiple js-states form-control">
-
-           <select class="js-example-placeholder js-states form-control">
-
-                  <option value="c1" >Scott Stevens</option>
-                  <option value="c2">Seth Frazie</option>
-                  <option value="c3">Jean Myers</option>
-                  <option value="c4">Todd Shelton</option>
-                  <option value="c5">Rosemary Porter</option>
-                  <option value="c6">Debbie Schmid</option>
-                  <option value="c7">Glenda Patterson</option>
-                </select>
+</div>
+<!-- FIN TRAILER WONDER -->
+<!-- FIN MODAL VER TRAILER -->
+<!-- MODAL de contactos -->
+<div id="cant-do-all-the-work-for-you" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="mySmallModalLabel"><input type="text" class="form-control" id="contact-list-search" placeholder="busca amigos..."></h4>
+      </div>
+      <div class="modal-body">
+        <select class="js-example-placeholder-multiple js-states form-control">
+          <select class="js-example-placeholder js-states form-control">
+            <option value="c1">Scott Stevens</option>
+            <option value="c2">Seth Frazie</option>
+            <option value="c3">Jean Myers</option>
+            <option value="c4">Todd Shelton</option>
+            <option value="c5">Rosemary Porter</option>
+            <option value="c6">Debbie Schmid</option>
+            <option value="c7">Glenda Patterson</option>
+          </select>
         </div>
       </div>
     </div>
   </div>
   <!-- FIN MODAL de contactos -->
-
-
   <!-- Navegador global -->
-
   <div class="container-fluid">
     <div class="row">
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <form class="navbar-form navbar-left" role="search">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="busca tus series o películas favoritas...">
-                <span class="input-group-btn">
-        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                </span>
-              </div>
-            </form>
-            <span class="title">RedFilm <span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
-                <div class="dropdown-menu" role="menu">
-                  <div class="media">
-                    <div class="media-body">
-                      <a class="media-left" href="#" data-toggle="modal" data-target="#login-modal">
-                        <h4 class="media-heading">Iniciar sesión</h4>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="media">
-                    <a class="media-left" href="#">
-                      <h4 class="media-heading">Crear cuenta</h4>
-                    </a>
-                  </div>
-                </div>
-
-              </li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
         </div>
-        <!-- /.container-fluid -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="busca tus series o películas favoritas...">
+              <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+          </form>
+          <span class="title">RedFilm <span class="glyphicon glyphicon-film" aria-hidden="true"></span></span>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
+            <div class="dropdown-menu" role="menu">
+              <div class="media">
+                <div class="media-body">
+                  <a class="media-left" href="#" data-toggle="modal" data-target="#login-modal">
+                  <h4 class="media-heading">Iniciar sesión</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="media">
+                <a class="media-left" href="#">
+                <h4 class="media-heading">Crear cuenta</h4>
+                </a>
+              </div>
+            </div>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
       </nav>
     </div>
   </div>
   <!-- Fin Navegador global -->
-
   <!-- Sección de amigos -->
   <div class="container-fluid contactos">
     <div class="col-sm-3 col-xs-12">
@@ -240,147 +228,147 @@
           <div class="panel panel-default">
             <div class="panel-heading c-list">
               <span class="title">Amigos</span>
-              
-
               <select class="js-example-placeholder js-states form-control">
-                  <option value="c1" >Scott Stevens</option>
-                  <option value="c2">Seth Frazie</option>
-                  <option value="c3">Jean Myers</option>
-                  <option value="c4">Todd Shelton</option>
-                  <option value="c5">Rosemary Porter</option>
-                  <option value="c6">Debbie Schmid</option>
-                  <option value="c7">Glenda Patterson</option>
-                </select>
-                                
-              
+                <option value="c1">Scott Stevens</option>
+                <option value="c2">Seth Frazie</option>
+                <option value="c3">Jean Myers</option>
+                <option value="c4">Todd Shelton</option>
+                <option value="c5">Rosemary Porter</option>
+                <option value="c6">Debbie Schmid</option>
+                <option value="c7">Glenda Patterson</option>
+              </select>
               <ul class="pull-right c-controls">
                 <li><a href="#cant-do-all-the-work-for-you" data-toggle="tooltip" data-placement="top" title="Add Contact"><i class="glyphicon glyphicon-plus"></i></a></li>
               </ul>
             </div>
-
             <div class="row">
               <div class="col-xs-12">
                 <div class="input-group c-search">
                   <input type="text" class="form-control" id="contact-list-search">
                   <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search text-muted"></span></button>
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search text-muted"></span></button>
                   </span>
                 </div>
               </div>
             </div>
             <div id="pai">
-            <ul id="c1" class="list-group hidden-xs" id="contact-list">
-              <li class="list-group-item">
+              <ul id="c1" class="list-group hidden-xs" id="contact-list">
+                <li class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <a href="perfil1.html"><img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle" /></a>
+                  <a href="perfil1.html"><img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle"/></a>
                 </div>
-                <div  class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                   <span class="name">Scott Stevens</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
-                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
-                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
                   <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
                   <a href="#"><span class="glyphicon glyphicon-ban-circle text-muted c-info pull-right" data-toggle="tooltip" title="Eliminar"></span></a>
-                  <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                  <span class="visible-xs"><span class="text-muted"></span><br/></span>
                 </div>
-                <div class="clearfix"></div>
-              </li>
-              <li id="c2" class="list-group-item">
+                <div class="clearfix">
+                </div>
+                </li>
+                <li id="c2" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <img src="http://api.randomuser.me/portraits/men/97.jpg" alt="Seth Frazier" class="img-responsive img-circle" />
+                  <img src="http://api.randomuser.me/portraits/men/97.jpg" alt="Seth Frazier" class="img-responsive img-circle"/>
                 </div>
-                <div  class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                   <span class="name">Seth Frazier</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
-                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
-                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
                   <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
                   <a href="#"><span class="glyphicon glyphicon-ban-circle text-muted c-info pull-right" data-toggle="tooltip" title="Eliminar"></span></a>
-                  <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                  <span class="visible-xs"><span class="text-muted"></span><br/></span>
                 </div>
-                <div class="clearfix"></div>
-              </li>
-              <li id="c3" class="list-group-item">
+                <div class="clearfix">
+                </div>
+                </li>
+                <li id="c3" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <img src="http://api.randomuser.me/portraits/women/90.jpg" alt="Jean Myers" class="img-responsive img-circle" />
+                  <img src="http://api.randomuser.me/portraits/women/90.jpg" alt="Jean Myers" class="img-responsive img-circle"/>
                 </div>
-                <div  class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                   <span class="name">Jean Myers</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
-                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
-                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
                   <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
                   <a href="#"><span class="glyphicon glyphicon-ban-circle text-muted c-info pull-right" data-toggle="tooltip" title="Eliminar"></span></a>
-                  <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                  <span class="visible-xs"><span class="text-muted"></span><br/></span>
                 </div>
-                <div class="clearfix"></div>
-              </li>
-              <li id="c4" class="list-group-item">
+                <div class="clearfix">
+                </div>
+                </li>
+                <li id="c4" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <img src="http://api.randomuser.me/portraits/men/24.jpg" alt="Todd Shelton" class="img-responsive img-circle" />
+                  <img src="http://api.randomuser.me/portraits/men/24.jpg" alt="Todd Shelton" class="img-responsive img-circle"/>
                 </div>
-                <div   class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                   <span class="name">Todd Shelton</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
-                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
-                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
                   <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
                   <a href="#"><span class="glyphicon glyphicon-ban-circle text-muted c-info pull-right" data-toggle="tooltip" title="Eliminar"></span></a>
-                  <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                  <span class="visible-xs"><span class="text-muted"></span><br/></span>
                 </div>
-                <div class="clearfix"></div>
-              </li>
-              <li id="c5" class="list-group-item">
+                <div class="clearfix">
+                </div>
+                </li>
+                <li id="c5" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <img src="http://api.randomuser.me/portraits/women/34.jpg" alt="Rosemary Porter" class="img-responsive img-circle" />
+                  <img src="http://api.randomuser.me/portraits/women/34.jpg" alt="Rosemary Porter" class="img-responsive img-circle"/>
                 </div>
-                <div  class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                   <span class="name">Rosemary Porter</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
-                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
-                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
                   <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
                   <a href="#"><span class="glyphicon glyphicon-ban-circle text-muted c-info pull-right" data-toggle="tooltip" title="Eliminar"></span></a>
-                  <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                  <span class="visible-xs"><span class="text-muted"></span><br/></span>
                 </div>
-                <div class="clearfix"></div>
-              </li>
-              <li  id="c6" class="list-group-item">
+                <div class="clearfix">
+                </div>
+                </li>
+                <li id="c6" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <img src="http://api.randomuser.me/portraits/women/56.jpg" alt="Debbie Schmidt" class="img-responsive img-circle" />
+                  <img src="http://api.randomuser.me/portraits/women/56.jpg" alt="Debbie Schmidt" class="img-responsive img-circle"/>
                 </div>
-                <div  class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                   <span class="name">Debbie Schmidt</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
-                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
-                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149</span><br/></span>
                   <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
                   <a href="#"><span class="glyphicon glyphicon-ban-circle text-muted c-info pull-right" data-toggle="tooltip" title="Eliminar"></span></a>
-                  <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                  <span class="visible-xs"><span class="text-muted"></span><br/></span>
                 </div>
-                <div class="clearfix"></div>
-              </li>
-              <li id="c8" class="list-group-item">
+                <div class="clearfix">
+                </div>
+                </li>
+                <li id="c8" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
-                  <img src="http://api.randomuser.me/portraits/women/76.jpg" alt="Glenda Patterson" class="img-responsive img-circle" />
+                  <img src="http://api.randomuser.me/portraits/women/76.jpg" alt="Glenda Patterson" class="img-responsive img-circle"/>
                 </div>
-                <div  class="col-xs-12 col-sm-9">
+                <div class="col-xs-12 col-sm-9">
                   <span class="name">Glenda Patterson</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
-                  <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
-                  <span class="visible-xs"> <span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149 </span><br/></span>
+                  <span class="visible-xs"><span class="text-muted">Sígueme!</span><br/></span>
+                  <span class="visible-xs"><span class="text-muted glyphicon glyphicon-earphone">(870) 288-4149 </span><br/></span>
                   <a href="#"><span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="envíale un mensaje interno"></span></a>
                   <a href="#"><span class="glyphicon glyphicon-ban-circle text-muted c-info pull-right" data-toggle="tooltip" title="Eliminar"></span></a>
-                  <span class="visible-xs"> <span class="text-muted"></span><br/></span>
+                  <span class="visible-xs"><span class="text-muted"></span><br/></span>
                 </div>
-                <div class="clearfix"></div>
-              </li>
-            </ul>
-            <div id="hastaaqui">Animar scroll hasta aquí</div>
-          </div>
+                <div class="clearfix">
+                </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-
         <!-- MODAL de contactos -->
         <div id="cant-do-all-the-work-for-you" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-sm">
@@ -390,17 +378,20 @@
                 <h4 class="modal-title" id="mySmallModalLabel">Ooops!!!</h4>
               </div>
               <div class="modal-body">
-                <p>I am being lazy and do not want to program an "Add User" section into this snippet... So it looks like you'll have to do that for yourself.</p><br/>
-                <p><strong>Sorry<br/>
-                    ~ Mouse0270</strong></p>
+                <p>
+                  I am being lazy and do not want to program an "Add User" section into this snippet... So it looks like you'll have to do that for yourself.
+                </p>
+                <br/>
+                <p>
+                  <strong>Sorry<br/>
+                  ~ Mouse0270</strong>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
     <!-- Sección Nuevos estrenos -->
     <div class="estrenos">
       <div class="col-sm-9">
@@ -411,15 +402,15 @@
           <div class="movie-header coco">
             <div class="header-icon-container">
               <a href="#" data-toggle="modal" data-target="#myModal">
-      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
-      				</a>
+              <i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+              </a>
             </div>
           </div>
           <!--Contenido de la película-->
           <div class="movie-content">
             <div class="movie-content-header">
               <a href="#">
-                <h3 class="movie-title">Coco</h3>
+              <h3 class="movie-title">Coco</h3>
               </a>
             </div>
             <div class="movie-info">
@@ -437,21 +428,20 @@
             </div>
           </div>
         </div>
-
         <!-- estreno 2 -->
         <div class="movie-card col-sm-2 col-xs-12">
           <div class="movie-header starWars">
             <div class="header-icon-container">
               <a href="#" data-toggle="modal" data-target="#myModal-2">
-      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
-      				</a>
+              <i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+              </a>
             </div>
           </div>
           <!--Contenido de la película-->
           <div class="movie-content">
             <div class="movie-content-header">
               <a href="#">
-                <h3 class="movie-title">Star Wars</h3>
+              <h3 class="movie-title">Star Wars</h3>
               </a>
             </div>
             <div class="movie-info">
@@ -469,22 +459,20 @@
             </div>
           </div>
         </div>
-
-
         <!-- estreno 3 -->
         <div class="movie-card col-sm-2 col-xs-12">
           <div class="movie-header jumanji">
             <div class="header-icon-container">
               <a href="#" data-toggle="modal" data-target="#myModal-3">
-      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
-      				</a>
+              <i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+              </a>
             </div>
           </div>
           <!--Contenido de la película-->
           <div class="movie-content">
             <div class="movie-content-header">
               <a href="#">
-                <h3 class="movie-title">Jumanji</h3>
+              <h3 class="movie-title">Jumanji</h3>
               </a>
             </div>
             <div class="movie-info">
@@ -507,15 +495,15 @@
           <div class="movie-header wonder">
             <div class="header-icon-container">
               <a href="#" data-toggle="modal" data-target="#myModal-4">
-      					<i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
-      				</a>
+              <i class="material-icons header-icon"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></i>
+              </a>
             </div>
           </div>
           <!--Contenido de la película-->
           <div class="movie-content">
             <div class="movie-content-header">
               <a href="#">
-                <h3 class="movie-title">Wonder</h3>
+              <h3 class="movie-title">Wonder</h3>
               </a>
             </div>
             <div class="movie-info">
@@ -533,84 +521,57 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
-  </div>
-
-  <!-- Row de favoritas y muro de contenido -->
-  <!-- Peliculas Favoritas -->
-
-  <div class="container">
-
-    <div class="col-sm-3 col-xs-12" style="margin-bottom:2em;">
-      <h2>Tus Favoritas</h2>
-      <div class="card card-inverse card-info">
-        <img class="card-img-top" src="assets/img/loVengadores.jpg">
-        <div class="card-block">
-          <h4 class="card-title">Accion</h4>
-          <div class="card-text">
-            Año 2012
-          </div>
-        </div>
-        <div class="card-footer">
-          <button class="btn btn-info float-right btn-sm">Ver más</button>
+</div>
+<!-- Row de favoritas y muro de contenido -->
+<!-- Peliculas Favoritas -->
+<div class="container">
+  <div class="col-sm-3 col-xs-12" style="margin-bottom:2em;">
+    <h2>Tus Favoritas</h2>
+    <div class="card card-inverse card-info">
+      <img class="card-img-top" src="assets/img/loVengadores.jpg">
+      <div class="card-block">
+        <h4 class="card-title">Accion</h4>
+        <div class="card-text">
+           Año 2012
         </div>
       </div>
-      <div class="card card-inverse card-info" style="margin-top: 2em;">
-        <img class="card-img-top" src="assets/img/loVengadores.jpg">
-        <div class="card-block">
-          <h4 class="card-title">Accion</h4>
-          <div class="card-text">
-            Año 2012
-          </div>
-
-        </div>
-        <div class="card-footer">
-          <button class="btn btn-info float-right btn-sm">Ver más</button>
+      <div class="card-footer">
+        <button class="btn btn-info float-right btn-sm">Ver más</button>
+      </div>
+    </div>
+    <div class="card card-inverse card-info" style="margin-top: 2em;">
+      <img class="card-img-top" src="assets/img/loVengadores.jpg">
+      <div class="card-block">
+        <h4 class="card-title">Accion</h4>
+        <div class="card-text">
+           Año 2012
         </div>
       </div>
-  
-
-
-          <div class="card-footer">
-              <button class="btn btn-info float-right btn-sm">Seguir</button>
-          </div>
-     
-      </div>   
-  
-
-
+      <div class="card-footer">
+        <button class="btn btn-info float-right btn-sm">Ver más</button>
+      </div>
+    </div>
+   </div>
     <!-- Sección de mi muro de noticias comentarios-->
     <div class="col-sm-9">
       <div class="comments">
         <h1>Mi muro</h1>
         <div class="comment-wrap">
           <div class="photo">
-            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg')"></div>
-          </div>
-          <div class="comment-block">
-            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit
-              quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
-            <div class="bottom-comment">
-              <div class="comment-date">Aug 24, 2014 @ 2:35 PM</div>
-              <ul class="comment-actions">
-                <li class="complain">Complain</li>
-                <li class="reply">Reply</li>
-              </ul>
+            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg')">
             </div>
           </div>
-        </div>
-
-        <div class="comment-wrap">
-          <div class="photo">
-            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
-          </div>
           <div class="comment-block">
-            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.</p>
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?
+            </p>
             <div class="bottom-comment">
-              <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+              <div class="comment-date">
+                Aug 24, 2014 @ 2:35 PM
+              </div>
               <ul class="comment-actions">
                 <li class="complain">Complain</li>
                 <li class="reply">Reply</li>
@@ -620,12 +581,17 @@
         </div>
         <div class="comment-wrap">
           <div class="photo">
-            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
+            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')">
+            </div>
           </div>
           <div class="comment-block">
-            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.</p>
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.
+            </p>
             <div class="bottom-comment">
-              <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+              <div class="comment-date">
+                Aug 23, 2014 @ 10:32 AM
+              </div>
               <ul class="comment-actions">
                 <li class="complain">Complain</li>
                 <li class="reply">Reply</li>
@@ -635,70 +601,83 @@
         </div>
         <div class="comment-wrap">
           <div class="photo">
-            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')"></div>
+            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')">
+            </div>
           </div>
           <div class="comment-block">
-            <p class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corsporis totam.</p>
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam.
+            </p>
             <div class="bottom-comment">
-              <div class="comment-date">Aug 23, 2014 @ 10:32 AM</div>
+              <div class="comment-date">
+                Aug 23, 2014 @ 10:32 AM
+              </div>
               <ul class="comment-actions">
-                <li class="complain">Complain</li>s
+                <li class="complain">Complain</li>
+                <li class="reply">Reply</li>
               </ul>
             </div>
           </div>
         </div>
-
         <div class="comment-wrap">
           <div class="photo">
-            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg')"></div>
-
+            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/felipenogs/128.jpg')">
+            </div>
           </div>
-
-    
-           <!--agregando noticias por el usuario -->
-
-            <div id="nuevoComentario"></div>
-        <div class="comment-block">
+          <div class="comment-block">
+            <p class="comment-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corsporis totam.
+            </p>
+            <div class="bottom-comment">
+              <div class="comment-date">
+                Aug 23, 2014 @ 10:32 AM
+              </div>
+              <ul class="comment-actions">
+                <li class="complain">Complain</li>
+                s
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="comment-wrap">
+          <div class="photo">
+            <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg')">
+            </div>
+          </div>
+          <!--agregando noticias por el usuario -->
+          <div id="nuevoComentario">
+          </div>
+          <div class="comment-block">
             <form action="javascript:void(0)">
-                <textarea name="" id="comment" cols="30" rows="3" placeholder="Agrega noticias de tus peliculas"></textarea>
-                <ul>
-                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
-                   <input type="file" />
-                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"><input type="file" /></i></a></li>
-
-                </ul>
-                <button id="share" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
-
+              <textarea name="" id="comment" cols="30" rows="3" placeholder="Agrega noticias de tus peliculas"></textarea>
+              <ul>
+                <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
+                <input type="file"/>
+                <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"><input type="file"/></i></a></li>
+              </ul>
+              <button id="share" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
             </form>
           </div>
         </div>
-
       </div>
     </div>
+</div>
+<!-- FIN Row de favoritos y muro de contenido -->
+<!-- footer -->
+<footer class="container-fluid footer">
+<div class="row">
+  <div class="col-sm-12">
+    <div class="text-center center-block" style="margin-top:10px;">
+      <h5>Síguenos en</h5>
+      <a href="https://www.facebook.com/RedFilmsTV"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+      <a href="https://twitter.com/RedFilmCo"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
     </div>
-      </div>
-    <!-- FIN Row de favoritos y muro de contenido -->
-
-
-
-  <!-- footer -->
-  <footer class="container-fluid footer">
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="text-center center-block" style="margin-top:10px;">
-          <h5>Síguenos en</h5>
-          <a href="https://www.facebook.com/RedFilmsTV"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-          <a href="https://twitter.com/RedFilmCo"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-        </div>
-      </div>
-    </div>
-    </div>
-  </footer>
-
-
-
-       </div>
-     </div>
+  </div>
+</div>
+</div>
+</footer>
+</div>
+</div>
 </div>
 </div>
 
@@ -707,18 +686,13 @@
   <!-- Scripts -->
 
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="https://use.fontawesome.com/c555f55746.js"></script>
-  <script src="assets/js/app.js" type="application/javascript"></script>
-
-<script
+  <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
   crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- <script src="https://use.fontawesome.com/c555f55746.js"></script>
- <script src="assets/js/app.js" type="application/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c555f55746.js"></script>
+  <script src="assets/js/app.js" type="application/javascript"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
 
