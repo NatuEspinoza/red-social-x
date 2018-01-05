@@ -594,7 +594,7 @@ p {
 .comment-block {
   padding: 1rem;
   background-color: #fff;
-  display: table-cell;
+  /*display: table-cell;*/
   vertical-align: top;
   border-radius: 0.1875rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
@@ -660,7 +660,25 @@ p {
 .btn-secondary a:hover {
   background-color: blue;
 }
+/* aqui va la carga de las imagenes*/
 
+.pin {
+    height: 350px;
+    overflow: auto;
+}
+
+.pin img {
+    height: 200px;
+    width: auto;
+}
+
+.rear {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    opacity: 0;
+}
 
 /*fin de noticias*/
 
@@ -668,10 +686,20 @@ p {
 
 /* js comentarios */
 
+<<<<<<< Updated upstream
 .contComentario {
   margin: 2.5rem auto 0;
   max-width: 60.75rem;
   padding: 0 1.25rem;
+=======
+  /* js comentarios */
+ .contComentario{
+    padding: 1rem;
+    background-color: #fff;
+    vertical-align: top;
+    border-radius: 0.1875rem;
+    color: black;
+>>>>>>> Stashed changes
 }
 
 #nuevoComentario {
@@ -751,4 +779,25 @@ p {
   }
 }
 
+<<<<<<< Updated upstream
 /* Fin Media querys */
+=======
+.fa-video-camera, .fa-picture-o{
+	color: black;
+}
+  /* js comentarios */
+ .contComentario{
+    padding: 1rem;
+    background-color: #fff;
+    vertical-align: top;
+    border-radius: 0.1875rem;
+    color: black;
+}
+#nuevoComentario {
+  margin-left: 0em;
+}
+
+.fa-video-camera, .fa-picture-o{
+  color: black;
+}
+>>>>>>> Stashed changes

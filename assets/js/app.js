@@ -82,8 +82,23 @@ $(document).ready(function() {
   });
 
 
+<<<<<<< Updated upstream
   /*funcion para scroll de contactos */
+=======
 
+>>>>>>> Stashed changes
 
+	$(".js-example-placeholder").select2({
+    placeholder: "Select a state",
+    allowClear: true
+    
+   /** $('#miBuscador').on('change', function(){
+    var selectValor = '#'+$(this).val();
+		$('#pai').children('c').hide();
+	*	$('#pai').children(selectValor).show()
+   */
+});
+
+  
 
 });

@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 </head>
 
-<body>
+<body><link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
   <!-- MODAL LOGIN -->
   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -155,7 +156,11 @@
           <h4 class="modal-title" id="mySmallModalLabel"><input type="text"  class="form-control" id="contact-list-search" placeholder="busca amigos..."></h4>
         </div>
         <div class="modal-body">
+<<<<<<< Updated upstream
           <select class="js-example-placeholder-multiple js-states form-control">
+=======
+           <select class="js-example-placeholder js-states form-control">
+>>>>>>> Stashed changes
                   <option value="c1" >Scott Stevens</option>
                   <option value="c2">Seth Frazie</option>
                   <option value="c3">Jean Myers</option>
@@ -235,6 +240,19 @@
           <div class="panel panel-default">
             <div class="panel-heading c-list">
               <span class="title">Amigos</span>
+              
+
+              <select class="js-example-placeholder js-states form-control">
+                  <option value="c1" >Scott Stevens</option>
+                  <option value="c2">Seth Frazie</option>
+                  <option value="c3">Jean Myers</option>
+                  <option value="c4">Todd Shelton</option>
+                  <option value="c5">Rosemary Porter</option>
+                  <option value="c6">Debbie Schmid</option>
+                  <option value="c7">Glenda Patterson</option>
+                </select>
+                                
+              
               <ul class="pull-right c-controls">
                 <li><a href="#cant-do-all-the-work-for-you" data-toggle="tooltip" data-placement="top" title="Add Contact"><i class="glyphicon glyphicon-plus"></i></a></li>
               </ul>
@@ -250,13 +268,13 @@
                 </div>
               </div>
             </div>
-
-            <ul class="list-group hidden-xs" id="contact-list">
+            <div id="pai">
+            <ul id="c1" class="list-group hidden-xs" id="contact-list">
               <li class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
                   <a href="perfil1.html"><img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens" class="img-responsive img-circle" /></a>
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div  class="col-xs-12 col-sm-9">
                   <span class="name">Scott Stevens</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
                   <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
@@ -267,11 +285,11 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li class="list-group-item">
+              <li id="c2" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
                   <img src="http://api.randomuser.me/portraits/men/97.jpg" alt="Seth Frazier" class="img-responsive img-circle" />
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div  class="col-xs-12 col-sm-9">
                   <span class="name">Seth Frazier</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
                   <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
@@ -282,11 +300,11 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li class="list-group-item">
+              <li id="c3" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
                   <img src="http://api.randomuser.me/portraits/women/90.jpg" alt="Jean Myers" class="img-responsive img-circle" />
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div  class="col-xs-12 col-sm-9">
                   <span class="name">Jean Myers</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
                   <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
@@ -297,11 +315,11 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li class="list-group-item">
+              <li id="c4" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
                   <img src="http://api.randomuser.me/portraits/men/24.jpg" alt="Todd Shelton" class="img-responsive img-circle" />
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div   class="col-xs-12 col-sm-9">
                   <span class="name">Todd Shelton</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
                   <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
@@ -312,11 +330,11 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li class="list-group-item">
+              <li id="c5" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
                   <img src="http://api.randomuser.me/portraits/women/34.jpg" alt="Rosemary Porter" class="img-responsive img-circle" />
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div  class="col-xs-12 col-sm-9">
                   <span class="name">Rosemary Porter</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
                   <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
@@ -327,11 +345,11 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li class="list-group-item">
+              <li  id="c6" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
                   <img src="http://api.randomuser.me/portraits/women/56.jpg" alt="Debbie Schmidt" class="img-responsive img-circle" />
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div  class="col-xs-12 col-sm-9">
                   <span class="name">Debbie Schmidt</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
                   <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
@@ -342,11 +360,11 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-              <li class="list-group-item">
+              <li id="c8" class="list-group-item">
                 <div class="col-xs-12 col-sm-3">
                   <img src="http://api.randomuser.me/portraits/women/76.jpg" alt="Glenda Patterson" class="img-responsive img-circle" />
                 </div>
-                <div class="col-xs-12 col-sm-9">
+                <div  class="col-xs-12 col-sm-9">
                   <span class="name">Glenda Patterson</span><br/>
                   <a href="#"><span class="glyphicon glyphicon-heart text-muted c-info" data-toggle="tooltip" title="Seguir"></span></a>
                   <span class="visible-xs"> <span class="text-muted">Sígueme!</span><br/></span>
@@ -359,6 +377,7 @@
               </li>
             </ul>
             <div id="hastaaqui">Animar scroll hasta aquí</div>
+          </div>
           </div>
         </div>
 
@@ -546,6 +565,7 @@
           <div class="card-text">
             Año 2012
           </div>
+<<<<<<< Updated upstream
         </div>
         <div class="card-footer">
           <button class="btn btn-info float-right btn-sm">Ver más</button>
@@ -553,6 +573,14 @@
       </div>
     </div>
 
+=======
+          <div class="card-footer">
+              <button class="btn btn-info float-right btn-sm">Seguir</button>
+          </div>
+      </div>
+      </div>   
+  
+>>>>>>> Stashed changes
 
     <!-- Sección de mi muro de noticias y posts -->
     <div class="col-sm-9">
@@ -623,6 +651,7 @@
         <div class="comment-wrap">
           <div class="photo">
             <div class="avatar" style="background-image: url('https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg')"></div>
+<<<<<<< Updated upstream
           </div>
           <!--agregando noticias por el usuario -->
           <div class="comment-block">
@@ -633,9 +662,26 @@
                 <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"></i></a></li>
               </ul>
               <button id="share" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+=======
+        </div>
+           <!--agregando noticias por el usuario -->
+
+            <div id="nuevoComentario"></div>
+        <div class="comment-block">
+            <form action="javascript:void(0)">
+                <textarea name="" id="comment" cols="30" rows="3" placeholder="Agrega noticias de tus peliculas"></textarea>
+                <ul>
+                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class="fa fa-video-camera"></i></a></li>
+                   <input type="file" />
+                  <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="fa fa-picture-o"><input type="file" /></i></a></li>
+
+                </ul>
+                <button id="share" type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
+>>>>>>> Stashed changes
             </form>
           </div>
         </div>
+<<<<<<< Updated upstream
       </div>
     </div>
     <!-- FIN Row de favoritos y muro de contenido -->
@@ -663,14 +709,31 @@
   </footer>
 
 
+=======
+       </div>
+     </div>
+</div>
+</div>
+>>>>>>> Stashed changes
 
 
   <!-- Scripts -->
 
+<<<<<<< Updated upstream
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://use.fontawesome.com/c555f55746.js"></script>
   <script src="assets/js/app.js" type="application/javascript"></script>
+=======
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <script src="https://use.fontawesome.com/c555f55746.js"></script>
+ <script src="assets/js/app.js" type="application/javascript"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+>>>>>>> Stashed changes
 
 </body>
 
