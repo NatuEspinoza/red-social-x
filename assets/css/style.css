@@ -542,7 +542,7 @@ input, textarea {
   -webkit-font-smoothing: antialiased;
   font-family: "PT Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1rem;
-  color: #555f77;
+  color: black;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -607,6 +607,7 @@ p {
 
 .comment-text {
   margin-bottom: 1.25rem;
+  color: black;
 }
 
 .bottom-comment {
