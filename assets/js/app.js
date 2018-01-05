@@ -73,10 +73,13 @@ $(document).ready(function() {
 
 
   /**
-   * Función para seguir (corazón)
+   * Funcion para agregara amigos
    */
+   	$(".js-example-placeholder-multiple").select2({
+    placeholder: "Select a state",
+    allowClear: true
 
-
+  });
 
 
   /*funcion para scroll de contactos */
