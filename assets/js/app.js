@@ -82,11 +82,11 @@ $(document).ready(function() {
   });
 
 
-<<<<<<< Updated upstream
-  /*funcion para scroll de contactos */
-=======
 
->>>>>>> Stashed changes
+  /*funcion para scroll de contactos */
+
+
+
 
 	$(".js-example-placeholder").select2({
     placeholder: "Select a state",

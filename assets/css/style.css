@@ -686,12 +686,11 @@ p {
 
 /* js comentarios */
 
-<<<<<<< Updated upstream
 .contComentario {
   margin: 2.5rem auto 0;
   max-width: 60.75rem;
   padding: 0 1.25rem;
-=======
+}
   /* js comentarios */
  .contComentario{
     padding: 1rem;
@@ -699,7 +698,7 @@ p {
     vertical-align: top;
     border-radius: 0.1875rem;
     color: black;
->>>>>>> Stashed changes
+
 }
 
 #nuevoComentario {
@@ -779,9 +778,9 @@ p {
   }
 }
 
-<<<<<<< Updated upstream
+
 /* Fin Media querys */
-=======
+
 .fa-video-camera, .fa-picture-o{
 	color: black;
 }
@@ -800,4 +799,4 @@ p {
 .fa-video-camera, .fa-picture-o{
   color: black;
 }
->>>>>>> Stashed changes
+
